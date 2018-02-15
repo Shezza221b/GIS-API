@@ -23,12 +23,7 @@ class post_location(Resource):
 	def post(self):
 		Session = sessionmaker(db)
 		session = Session()
-		lat = request.form['lat']
-		lon = request.form['lon']
-		pin = request.form['pin']
-		address = request.form['address']
-		city = request.form['city']
-		new = createNewEntry([pin, address, city, lat, lon, 0])
+		new = createNewEntry([request.form['pin'], request.form['address'], request.form['city'], request.form['lat'], request.form['lon'], 0])
 		if new and check(new):
 			session.add(new)
 			session.commit()
