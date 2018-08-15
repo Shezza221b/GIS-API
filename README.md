@@ -1,4 +1,5 @@
-# Geographic Information System API with Flask and PostgreSQL
+# Geographic Information System API
+## RESTful API with Flask and PostgreSQL which supports basic CRUD operations such as adding a new location, fetching all nearby locations and determining which region a new location falls in.
 
 ### Dependencies
 
