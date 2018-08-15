@@ -1,4 +1,4 @@
-# API with Flask and PostgreSQL
+# Geographic Information System API with Flask and PostgreSQL
 
 ### Dependencies
 
